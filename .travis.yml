@@ -6,3 +6,7 @@ before_script:
 jdk:
   - oraclejdk7
 #  - oraclejdk8
+
+env:
+  global:
+    - JAVA_OPTS="-Xms1024m -Xmx1024m -XX:+TieredCompilation"
