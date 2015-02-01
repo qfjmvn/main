@@ -1047,6 +1047,11 @@ public class SessionTest {
         // onLogout was called
         assertTrue(application.logoutSessions.size() == 1);
     }
+    
+    @Test
+    public void testTravis(){
+    	
+    }
 
     private Session setUpSession(Application application, boolean isInitiator, Responder responder)
             throws NoSuchFieldException, IllegalAccessException {
