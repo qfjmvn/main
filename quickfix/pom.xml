@@ -1,0 +1,101 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>quickfix</groupId>
+  <artifactId>quickfix</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>quickfix</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+   <dependencies>
+  	<dependency>
+  		<groupId>junit</groupId>
+  		<artifactId>junit</artifactId>
+  		<version>4.11</version>
+  	</dependency>
+  	<dependency>
+		<groupId>org.apache.mina</groupId>
+		<artifactId>mina-core</artifactId>
+		<version>1.1.7</version>
+	</dependency>
+  	<dependency>
+		<groupId>org.slf4j</groupId>
+		<artifactId>slf4j-api</artifactId>
+		<version>1.6.3</version>
+	</dependency>
+	<dependency>
+		<groupId>berkeleydb</groupId>
+		<artifactId>je</artifactId>
+		<version>2.1.30</version>
+	</dependency>
+	
+	<dependency>
+	<groupId>dom4j</groupId>
+	<artifactId>dom4j</artifactId>
+	<version>1.6.1</version>
+</dependency>
+
+<dependency>
+	<groupId>com.cloudhopper.proxool</groupId>
+	<artifactId>proxool</artifactId>
+	<version>0.9.1</version>
+</dependency>
+
+<dependency>
+	<groupId>org.mockito</groupId>
+	<artifactId>mockito-all</artifactId>
+	<version>1.4</version>
+</dependency>
+
+	
+	<dependency>
+	<groupId>org.apache.mina</groupId>
+	<artifactId>mina-filter-ssl</artifactId>
+	<version>1.1.7</version>
+</dependency>
+	
+<dependency>
+	<groupId>org.hamcrest</groupId>
+	<artifactId>hamcrest-all</artifactId>
+	<version>1.1</version>
+</dependency>
+	
+  	<dependency>
+    <groupId>tyrex</groupId>
+    <artifactId>tyrex</artifactId>
+    <version>1.0.1</version>
+</dependency>
+  	
+  	<dependency>
+	<groupId>hsqldb</groupId>
+	<artifactId>hsqldb</artifactId>
+	<version>1.8.0.7</version>
+</dependency>
+  	
+  	<dependency>
+	<groupId>org.slf4j</groupId>
+	<artifactId>slf4j-simple</artifactId>
+	<version>1.6.3</version>
+</dependency>
+  	
+  	
+  </dependencies>
+
+   <build>	
+	   <testResources>
+	      <testResource>
+	        <directory>${project.basedir}/core/src/test/resources</directory>
+	      </testResource>
+	      <testResource>
+	        <directory>${project.basedir}/core/src/main/resources</directory>
+	      </testResource>
+	    </testResources>	
+	</build>
+</project>
