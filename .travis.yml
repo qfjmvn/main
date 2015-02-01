@@ -14,4 +14,4 @@ jdk:
 env:
   global:
     - JAVA_OPTS="-Xms1024m -Xmx1024m -XX:+TieredCompilation"
-    - MAVEN_OPTS="-Xms1024m -Xmx1024m -XX:+TieredCompilation"
+    - MAVEN_OPTS="-Xms2048m -Xmx2048m -XX:+TieredCompilation"
