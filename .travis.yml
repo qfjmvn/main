@@ -1,5 +1,9 @@
 language: java
 
+cache:
+  directories:
+    - $HOME/.m2
+
 before_script:
  - cd quickfix
  
@@ -10,3 +14,4 @@ jdk:
 env:
   global:
     - JAVA_OPTS="-Xms1024m -Xmx1024m -XX:+TieredCompilation"
+    - MAVEN_OPTS="-Xms1024m -Xmx1024m -XX:+TieredCompilation"
