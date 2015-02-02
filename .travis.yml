@@ -14,3 +14,5 @@ jdk:
 env:
   global:
     - MAVEN_OPTS="-Xms2048m -Xmx4096m -XshowSettings -verbose:gc"
+    
+script: mvn clean
