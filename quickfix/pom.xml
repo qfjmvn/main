@@ -96,6 +96,21 @@
 	      <testResource>
 	        <directory>${project.basedir}/core/src/main/resources</directory>
 	      </testResource>
-	    </testResources>	
+	    </testResources>
+	    
+	    <plugins>
+	    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.2</version>
+        <configuration>
+          <fork>true</fork>
+          <meminitial>1024m</meminitial>
+          <maxmem>2048m</maxmem>
+        </configuration>
+      </plugin>
+        </plugins>
+      
+	    	
 	</build>
 </project>
