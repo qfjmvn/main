@@ -89,6 +89,13 @@
   </dependencies>
 
    <build>	
+    <sourceDirectory>${project.basedir}/core/src/main/java</sourceDirectory>
+    <testSourceDirectory>${project.basedir}/core/src/test/java</testSourceDirectory>
+    <resources>
+      <resource>
+        <directory>/Users/Peeyush/git/main/quickfix/src/main/resources</directory>
+      </resource>
+    </resources>
 	   <testResources>
 	      <testResource>
 	        <directory>${project.basedir}/core/src/test/resources</directory>
@@ -99,6 +106,32 @@
 	    </testResources>
 	    
 	    <plugins>
+	    
+<!-- 	    <plugin> -->
+<!--         <groupId>org.codehaus.mojo</groupId> -->
+<!--         <artifactId>exec-maven-plugin</artifactId> -->
+<!--         <version>1.3.2</version> -->
+<!--         <executions> -->
+<!--           <execution> -->
+<!--             <id>generateCode</id> -->
+<!--             <phase>generate-sources</phase> -->
+<!--             <goals> -->
+<!--               <goal>java</goal> -->
+<!--             </goals> -->
+<!--             <configuration> -->
+<!--               <mainClass>quickfix.codegen.MessageCodeGenerator</mainClass> -->
+<!--               <classpathScope>runtime</classpathScope> -->
+<!--               <sourceRoot>${project.build.directory}/generated-sources/main/java</sourceRoot> -->
+<!--               <arguments> -->
+<!--               	<argument>${project.basedir}/core/src/main/resources</argument> -->
+<!--               	<argument>${project.basedir}/src/main/java/quickfix/codegen</argument> -->
+<!--               	<argument>${project.build.directory}/generated-sources/</argument> -->
+<!--               </arguments> -->
+<!--             </configuration> -->
+<!--           </execution> -->
+<!--         </executions> -->
+<!--       </plugin> -->
+	    
 	    <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -107,6 +140,7 @@
           <fork>true</fork>
           <meminitial>1024m</meminitial>
           <maxmem>2048m</maxmem>
+          <generatedSourcesDirectory>${project.build.directory}/generated-sources/</generatedSourcesDirectory>
         </configuration>
       </plugin>
         </plugins>
